@@ -2,7 +2,6 @@ com\gyan\beans\Card.class
 com\gyan\beans\Journey.class
 com\gyan\model\service\CardServiceImpl.class
 com\gyan\beans\Station.class
-com\gyan\client\ServletInitializer.class
 com\gyan\controller\MetroSystemController.class
 com\gyan\model\service\JourneyService.class
 com\gyan\exceptions\InvalidInputException.class

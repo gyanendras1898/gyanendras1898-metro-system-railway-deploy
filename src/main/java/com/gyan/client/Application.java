@@ -10,7 +10,13 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @SpringBootApplication(scanBasePackages = "com.gyan")
 @EnableJpaRepositories(basePackages = "com.gyan.model.persistence")
 @EntityScan(basePackages = "com.gyan.beans")
-public class Application {
+public class Application extends SpringBootServletInitializer {
+	
+
+	@Override
+	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+		return application.sources(Application.class);
+	}
 	
 	public String PORT = System.getenv("PORT");
 	public static void main(String[] args) {
