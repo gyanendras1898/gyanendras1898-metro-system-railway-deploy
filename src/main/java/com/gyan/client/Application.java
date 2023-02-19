@@ -18,7 +18,7 @@ public class Application extends SpringBootServletInitializer {
 		return application.sources(Application.class);
 	}
 	
-	public String PORT = System.getenv("PORT");
+//	public String PORT = System.getenv("PORT");
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
 	}
